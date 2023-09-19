@@ -22,6 +22,14 @@
 
   <!-- gsap.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- gsap-ScrollToPlugin -->
+  <!-- 순서 주의 (gsap.js보다 더 뒤에) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scrollmagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- main.js -->
   <script defer src="js/main.js"></script>
 </head>
@@ -121,21 +129,124 @@
   <section class="content-1">
     <div class="inner inner-content">
       <div class="content">
+
         <div class="boxfelx">
-          <div class="box1"></div>
-          <div class="box2"></div>
+          <div class="box box1">
+            <div class="box-content1">
+              <img src="img/1.png" alt="icon">
+              <div class="box-content-text">
+                <p>웹페이지 기획</p>
+                <p>WEB PLAB</p>
+                <div class="inbox-felx">
+                  <div class="box-content-inbox">MOBLE</div>
+                  <div class="box-content-inbox">반응형 웹</div>
+                </div>
+              </div>
+            </div>
+            <div class="line"><br></div>
+            <div class="box-content2">
+              <p>요구&자료분석을 통한 컨셉 도출 <br> 와이어프레임을 통한 UI/UX 기획 <br> 인터페이스 검토</p>
+            </div>
+            <button type="button" class="btn box-content-btn">MORE</button>
+          </div>
+
+          <div class="box box2">
+            <div class="box-content1">
+              <img src="img/2.png" alt="icon">
+              <div class="box-content-text">
+                <p>디자인 제작</p>
+                <p>DESIGN WORK</p>
+                <div class="inbox-felx">
+                  <div class="box-content-inbox">UX/UI</div>
+                  <div class="box-content-inbox">반응형 웹</div>
+                </div>
+              </div>
+            </div>
+            <div class="line"><br></div>
+            <div class="box-content2">
+              <p>UX/UI 디자인 스케치 <br> 블로그 스킨 디자인 <br> PC/Mobile 반응형 디자인</p>
+            </div>
+            <button type="button" class="btn box-content-btn">MORE</button>
+          </div>
         </div>
+
         <div class="boxfelx">
-          <div class="box3"></div>
-          <div class="box4"></div>
+          <div class="box box3">
+            <div class="box-content1">
+              <img src="img/3.png" alt="icon">
+              <div class="box-content-text">
+                <p>유지보수</p>
+                <p>MAINTENANCE</p>
+                <div class="inbox-felx">
+                  <div class="box-content-inbox">도메인</div>
+                  <div class="box-content-inbox">호스팅</div>
+                </div>
+              </div>
+            </div>
+            <div class="line"><br></div>
+            <div class="box-content2">
+              <p>텍스트 교체 / 이미지 교체 <br> SNS링크 변경 / 동영상 교체 <br> 기능 수정 및 추가</p>
+            </div>
+            <button type="button" class="btn box-content-btn">MORE</button>
+          </div>
+
+          <div class="box box4">
+            <div class="box-content1">
+              <img src="img/4.png" alt="icon">
+              <div class="box-content-text">
+                <p>개발 / 퍼블리싱</p>
+                <p>DEV / PUBLISING</p>
+                <div class="inbox-felx">
+                  <div class="box-content-inbox">Backend</div>
+                  <div class="box-content-inbox">Forntend</div>
+                </div>
+              </div>
+            </div>
+            <div class="line"><br></div>
+            <div class="box-content2">
+              <p>사용자 페이지 구현 <br> DB 설계 및 데이터 연동 <br> 인터랙션 효과 구현</p>
+            </div>
+            <button type="button" class="btn box-content-btn">MORE</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="content-text">
+        <div class="content-text-logo">
+          <img src="img/logo_icon.png" alt="logo" class="text-logo">
+          <h2>OUR SERVICE</h2>
+        </div>
+        <h3> <span>시작</span> 부터 <span>완성</span> 까지 <span>함께하는 파트너</span></h3>
+        <h4><b>선 하나에도 이유있는 디자인</b> 을 합니다. <br> 팬텀디자인은 <span>기업의 아이덴티티</span> 를 <span>발견</span> 하고 <br> <span>새로운 가치</span> 를 <span>창조</span> 합니다.</h4>
+        <div class="btn content-text-btn">
+          <a href="">제작 의뢰하기>></a>
         </div>
       </div>
-      <div class="content-text">
-        <div class="inner">
-          <h2></h2>
-          <h3></h3>
-          <h4></h4>
-          <div></div>
+    </div>
+  </section>
+
+  <!-- CONTENT-2 -->
+  <section class="content-2">
+    <div class="inner">
+      <div class="content-2-logo-flex">
+        <img src="img/blue_logo.png" alt="logo">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="content-2-text-flex">
+        <h1>디자인 포트폴리오</h1>
+        <h2>프로젝트의 시작부터 그 이후까지 책입집니다. <br> 언제나 고객님에게 최고의 작업물을 전달할 수 있도록 노력하고 있습니다.</h2>
+      </div>
+      <div class="">
+        <h3>금융 & 공공기관</h3>
+        <div>
+          슬라이드 들어갈 자리
+        </div>
+      </div>
+      <div class="">
+        <h3>브랜드 & 쇼핑몰</h3>
+        <div>
+          슬라이드 들어갈 자리
         </div>
       </div>
     </div>
