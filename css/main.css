@@ -542,12 +542,18 @@ color: #555;
 }
 .end .end-text h3 {
   font-size: 40px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .end .end-text h3::after {
   content: "";
-  border-bottom: 1px solid #fff;
-  padding-bottom: 30px;
+  /* border-bottom: 1px solid #fff; */
+  /* padding-bottom: 30px; */
+  display: block;
+  width: 233px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .end .end-text p {
   font-size: 16px;
