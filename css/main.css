@@ -576,9 +576,14 @@ footer .footer-flex p {
 }
 footer .footer-flex .btn {
   border-radius: 3px;
-  background-color: #555;
+  background-color: #eee;
   width: 150px;
   margin-left: 5px;
+  color: #000;
+  border: 1px solid #fff;
+}
+footer .footer-flex .btn:hover {
+  background-color: #000;
   color: #fff;
 }
 footer .copyright {
