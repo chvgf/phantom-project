@@ -346,16 +346,33 @@ header .main-menu .item .inner {
 }
 
 /* CONTENT-2 */
-.content-2 {
-  height: 500px;
-  background-color: #eee;
-}
 .content-2 .content-2-logo-flex {
   display: flex;
   align-items: center;
+  padding-top: 30px;
+}
+.content-2 .content-2-logo-flex h2 {
+  font-size: 20px;
+  margin-left: 10px;
 }
 .content-2 .content-2-text-flex {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid #3a459f;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+.content-2 .content-2-text-flex h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #000;
+}
+.content-2 .content-2-text-flex h2 {
+font-size: 20px;
+color: #555;
+}
+/* CONTENT-2 슬라이드 */
+.content-2 .swiper {
+
 }
