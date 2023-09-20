@@ -30,39 +30,40 @@ window.addEventListener('scroll', function () {
 
 // CONTENT-2 수평 슬라이드 기능
 new Swiper('.content-2-1 .swiper', {
-    direction: 'horizontal', // 수직 슬라이드
-    loop: true, // 반복 재생 여부, 1 -> 2 -> 3 -> 4 -> 다시 1~
-    autoplay: { //// 자동 재생 여부
-      delay: 5000 // 5초마다 슬라이드 바뀜(기본값: 3000ms)
+    direction: 'horizontal', 
+    loop: true, 
+    autoplay: { 
+      delay: 5000 
     },
-    slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수(기본값: 1)
-    spaceBetween: 10, // 슬라이드 사이 여백(간격)px
-    centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
     pagination: {
-      el: '.content-2-1 .swiper-pagination', // 페이지 번호 요소 선택자
-      clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
-    }, //페이지 번호 사용
-    navigation: { // 슬라이드 이전/다음 버튼 사용
-      nextEl: '.content-2-1 .swiper-button-next', //다음 버튼 요소
-      prevEl: '.content-2-1 .swiper-button-prev' // 이전 버튼 요소
+      el: '.content-2-1 .swiper-pagination',
+      clickable: true 
+    },
+    navigation: {
+      nextEl: '.content-2-1 .swiper-button-next', 
+      prevEl: '.content-2-1 .swiper-button-prev' 
+    }
+});
+new Swiper('.content-2-2 .swiper', {
+    direction: 'horizontal', 
+    loop: true,
+    autoplay: { 
+      delay: 5000 
+    },
+    slidesPerView: 3, 
+    spaceBetween: 10, 
+    centeredSlides: true, 
+    pagination: {
+      el: '.content-2-2 .swiper-pagination', 
+      clickable: true 
+    }, 
+    navigation: { 
+      nextEl: '.content-2-2 .swiper-button-next', 
+      prevEl: '.content-2-2 .swiper-button-prev' 
     }
 });
 
-new Swiper('.content-2-2 .swiper', {
-    direction: 'horizontal', // 수직 슬라이드
-    loop: true, // 반복 재생 여부, 1 -> 2 -> 3 -> 4 -> 다시 1~
-    autoplay: { //// 자동 재생 여부
-      delay: 5000 // 5초마다 슬라이드 바뀜(기본값: 3000ms)
-    },
-    slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수(기본값: 1)
-    spaceBetween: 10, // 슬라이드 사이 여백(간격)px
-    centeredSlides: true, // 1번 슬라이드가 가운데 보이기
-    pagination: {
-      el: '.content-2-2 .swiper-pagination', // 페이지 번호 요소 선택자
-      clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
-    }, //페이지 번호 사용
-    navigation: { // 슬라이드 이전/다음 버튼 사용
-      nextEl: '.content-2-2 .swiper-button-next', //다음 버튼 요소
-      prevEl: '.content-2-2 .swiper-button-prev' // 이전 버튼 요소
-    }
-});
+// END BG
