@@ -71,17 +71,9 @@ new Swiper('.news .swiper', {
   direction: 'horizontal', 
   loop: true, 
   autoplay: { 
-    delay: 2000 
+    delay: 2500 
   },
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
-  pagination: {
-    el: '.news .swiper-pagination',
-    clickable: true 
-  },
-  navigation: {
-    nextEl: '.news .swiper-button-next', 
-    prevEl: '.news .swiper-button-prev' 
-  }
 });
