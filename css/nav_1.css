@@ -161,4 +161,6 @@ header .main-menu .item .inner {
   justify-content: center;
   align-items: center;
 }
-.bg_inner .bg_text .bg_text_flex h1
+.bg_inner .bg_text .bg_text_flex h2 {
+  
+}

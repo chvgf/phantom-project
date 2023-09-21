@@ -77,3 +77,6 @@ new Swiper('.news .swiper', {
   spaceBetween: 10,
   centeredSlides: true,
 });
+
+
+// 문의 Fixed
