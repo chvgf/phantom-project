@@ -66,4 +66,22 @@ new Swiper('.content-2-2 .swiper', {
     }
 });
 
-// END BG
+// NEWS 수평 슬라이드 3개
+new Swiper('.news .swiper', {
+  direction: 'horizontal', 
+  loop: true, 
+  autoplay: { 
+    delay: 2000 
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  pagination: {
+    el: '.news .swiper-pagination',
+    clickable: true 
+  },
+  navigation: {
+    nextEl: '.news .swiper-button-next', 
+    prevEl: '.news .swiper-button-prev' 
+  }
+});
