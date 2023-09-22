@@ -106,3 +106,12 @@ closeBtn.addEventListener('click', function () {
   fixedBtn.classList.remove('fixedBtn-active');
   fixedEl.classList.remove('fixed-active');
 })
+
+// TOP Fixed 
+gsap.to('.floating1', 1.5, {
+  delay: 0.5,
+  y: 13, 
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut 
+});

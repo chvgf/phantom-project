@@ -1,4 +1,7 @@
 /* COMMON */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
@@ -32,10 +35,12 @@ img {
   width: 100px;
   height: 33px;
   border: 1px solid #000;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
 }
 .btn:hover {
   background-color: #00d8d8;
   border: 1px solid #1d8888;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
 }
 
 /* HEADER */
@@ -160,7 +165,20 @@ header .main-menu .item .inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.6;
+  margin-bottom: 20px;
 }
 .bg_inner .bg_text .bg_text_flex h2 {
-  
+  margin-left: 20px;
+  font-size: 30px;
+}
+.bg_inner .bg_text .bg_text_flex img {
+  width: 43px;
+  height: 50px;
+}
+#app {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 20px;
 }
