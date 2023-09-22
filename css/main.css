@@ -806,6 +806,21 @@ color: #555;
   right: 480px;
 }
 
+/* TOP */
+/* .top {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  bottom: 25px;
+  margin: 0 auto;
+  display: block;
+}
+.top-ro {
+  transform: rotate(-45deg);
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: block;
+} */
 
 
 
