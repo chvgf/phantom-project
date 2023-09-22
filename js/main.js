@@ -80,29 +80,29 @@ new Swiper('.news .swiper', {
 
 
 // 문의 Fixed
-const promotionEl = document.querySelector('section.promotion');
-const promotionToggleBtn = document.querySelector('.toggle-promotion');
-const promotionToggleIcon = promotionToggleBtn.querySelector('.material-icons');
+const fixedBtn = document.querySelector('div.side-fixed');
+const fixedEl = document.querySelector('form.fixed-form');
+const closeBtn = document.querySelector('.close-btn')
 
-// 토글 버튼을 클릭했을 때 아래 기능을 실행
-// 프로모션 요소에 'hide'라는 클래스 값이 있으면 보임 처리!('hide' 클래스를 제거하고 아이콘 모양을 'upload'로 설정)
-//그렇지 않으면 숨김 처리!('hide' 클래스를 추가하고 아이콘 모양을 'download'로 설정)
-// promotionToggleIcon.addEventListener('click', function () {
-//   promotionEl.classList.contains('hide'); 
-//   if (promotionEl.classList.contains('hide')) {
-//     promotionEl.classList.remove('hide');    
-//   } else {
-//     promotionEl.classList.add('hide');
-//   }
-// });
-
-promotionToggleIcon.addEventListener('click', function () {
-  let hasHide = promotionEl.classList.contains('hide');
-  if (hasHide) {
-    promotionEl.classList.remove('hide');
-    promotionToggleIcon.textContent = 'upload'
+fixedBtn.addEventListener('click', function () {
+  const activeEl = fixedEl.classList.contains('fixed-active');
+  if (activeEl) {
+    fixedEl.classList.remove('fixed-active');
   } else {
-    promotionEl.classList.add('hide');
-    promotionToggleIcon.textContent = 'download'
+    fixedEl.classList.add('fixed-active');
   }
 });
+
+fixedBtn.addEventListener('click', function () {
+  const activeBtnEl = fixedBtn.classList.contains('fixedBtn-active');
+  if (activeBtnEl) {
+    fixedBtn.classList.remove('fixedBtn-active');
+  } else {
+    fixedBtn.classList.add('fixedBtn-active');
+  }
+});
+
+closeBtn.addEventListener('click', function () {
+  fixedBtn.classList.remove('fixedBtn-active');
+  fixedEl.classList.remove('fixed-active');
+})

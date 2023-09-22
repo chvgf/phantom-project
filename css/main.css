@@ -32,10 +32,12 @@ img {
   width: 100px;
   height: 33px;
   border: 1px solid #000;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
 }
 .btn:hover {
   background-color: #00d8d8;
   border: 1px solid #1d8888;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
 }
 
 /* HEADER */
@@ -676,6 +678,10 @@ color: #555;
 /* 문의 Fixed */
 .side-fixed {
   position: fixed;
+  z-index: 10;
+  right: 25px;
+  bottom: 25px;
+  transition: 1s;
 }
 .side-fixed a {
   width: 69px;
@@ -683,16 +689,121 @@ color: #555;
   border-radius: 50%;
   background-color: #fff;
   position: relative;
+  display: block;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
 }
 .side-fixed a img {
-  width: 35px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.side-fixed a div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 69px;  
+  transition: 0.4s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.side-fixed a:hover div {
+  position: absolute;
+  width: 130px;
+  height: 90%;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  transform: translateX(-75%);
+  border-radius: 50px;
+  opacity: 1;
+  z-index: -1;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  padding-right: 10px;
+  line-height: 62px;
+}
+/* 문의 클릭시 창 */
+.fixed-form {
+  z-index: 10;
+  width: 437px;
+  height: 100%;
+  position: fixed;
+  right: -437px;
+  opacity: 0;
+  bottom: 0px;
+  background-color: #fff;
+  color: #000;
+  padding: 33px;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  transition: 1s;
+  overflow: auto;
+}
+.fixed-form .close-btn {
+  cursor: pointer;
+}
+.fixed-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+}
+.fixed-form p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 20px;
+}
+.fixed-form p .bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+.fixed-form p .underline {
+  text-decoration: underline;
+}
+.fixed-form .fixed-input {
+  margin: 10px 0;
+}
+.fixed-form .fixed-input-checkbox {
+  width: 14px;
+  height: 14px;
+}
+.fixed-form input {
+  width: 90%;
+  height: 40px;
+  padding: 6px 35px 6px 10px;
+  box-sizing: border-box;
+  background-color: #f3f3f3f3;
+  border: transparent;
+  border-radius: 2px;
+}
+.fixed-form textarea {
+  width: 90%;
+  height: 77px;
+  padding: 6px 35px 6px 10px;
+  box-sizing: border-box;
+  background-color: #f3f3f3f3;
+  border: transparent;
+  border-radius: 2px;
+  resize: none;
+}
+/* fixed js */
+.fixed-active {
+  right: 0;
+  opacity: 1;
+}
+.fixedBtn-active {
+  right: 480px;
 }
 
 
