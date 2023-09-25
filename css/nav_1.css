@@ -9,7 +9,7 @@ body {
   line-height: 1.4;
   color: #3a459f;
   margin-top: 0;
-  /* overflow-x: hidden; */
+  height: 2000px;
 }
 
 a {
@@ -158,9 +158,6 @@ header .main-menu .item .inner {
   align-items: center;
   height: 80vh;
 }
-.bg_inner .bg_text {
-
-}
 .bg_inner .bg_text .bg_text_flex {
   display: flex;
   justify-content: center;
@@ -172,13 +169,58 @@ header .main-menu .item .inner {
   margin-left: 20px;
   font-size: 30px;
 }
+.bg_inner .bg_text h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.bg_inner .bg_text h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.bg_inner .bg_text h4 span {
+  text-decoration: underline;
+}
 .bg_inner .bg_text .bg_text_flex img {
   width: 43px;
   height: 50px;
 }
 #app {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   text-decoration: underline;
   margin-bottom: 20px;
+}
+
+/* CONTENT-1 */
+.content-1-inner {
+  padding: 100px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.content-1 .content-1-flex {
+  display: flex;
+}
+.content-1 .content-1-flex .content-1-text h2 {
+  font-size: 50px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.content-1 .content-1-flex .content-1-text .content-1-maintext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+  padding-right: 70px;
+}
+.content-1 .content-1-flex .content-1-text p .bold {
+  font-weight: 700;
+}
+.content-1 .content-1-flex .content-1-text p .underline {
+  text-decoration: underline;
+}
+.content-1 .content-1-flex .content-1-text .content-1-text-flex {
+  display: flex;
+  padding-right: 70px;
+  justify-content: space-between;
+  color: #000;
+  margin: 20px 0;
 }

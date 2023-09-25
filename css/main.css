@@ -141,6 +141,11 @@ header .main-menu .item .inner {
 
 
 /* SEC-BG */
+#app {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 .bg_img {
   background-image: url("../img/phantom-main.jpg");
   background-position: center;

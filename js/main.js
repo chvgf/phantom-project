@@ -12,6 +12,31 @@ if (window.scrollY > 100) {
 }
 });
 
+
+// 타이핑 라이브러리
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 70,
+  deleteSpeed: 60
+});
+
+typewriter
+  .pauseFor(1200)
+  .typeString('고객의 생각을 디자인합니다.')
+  .pauseFor(500)
+  .deleteChars('7')
+  .pauseFor(1200)
+  .typeString('함께합니다.')
+  .pauseFor(500)
+  .deleteChars('6')
+  .pauseFor(1200)
+  .typeString('공유합니다.')
+  .pauseFor(500)
+  .deleteChars('6')
+  .start();
+
 // CONTENT-1 애니메이션
 const conBoxEl = document.querySelectorAll('.content .box')
 
