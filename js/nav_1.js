@@ -30,3 +30,40 @@ typewriter
   .pauseFor(600)
   .deleteAll('88')
   .start();
+
+  // 문의 Fixed
+const fixedBtn = document.querySelector('div.side-fixed');
+const fixedEl = document.querySelector('form.fixed-form');
+const closeBtn = document.querySelector('.close-btn')
+
+fixedBtn.addEventListener('click', function () {
+  const activeEl = fixedEl.classList.contains('fixed-active');
+  if (activeEl) {
+    fixedEl.classList.remove('fixed-active');
+  } else {
+    fixedEl.classList.add('fixed-active');
+  }
+});
+
+fixedBtn.addEventListener('click', function () {
+  const activeBtnEl = fixedBtn.classList.contains('fixedBtn-active');
+  if (activeBtnEl) {
+    fixedBtn.classList.remove('fixedBtn-active');
+  } else {
+    fixedBtn.classList.add('fixedBtn-active');
+  }
+});
+
+closeBtn.addEventListener('click', function () {
+  fixedBtn.classList.remove('fixedBtn-active');
+  fixedEl.classList.remove('fixed-active');
+})
+
+// TOP Fixed 
+gsap.to('.floating1', 1.5, {
+  delay: 0.5,
+  y: 13, 
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut 
+});

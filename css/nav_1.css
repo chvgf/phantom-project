@@ -140,7 +140,7 @@ header .main-menu .item .inner {
 /* BG */
 .bg_img {
   background-image: url(../img/nav_1/sub_company.png);
-  width: 100vw;
+  width: 99.1vw;
   height: 80vh;
   position: relative;
   left: 0;
@@ -225,6 +225,9 @@ header .main-menu .item .inner {
 }
 
 /* CONTENT-2 */
+.content-2 {
+  padding-bottom: 100px;
+}
 .content-2 .text-ani {
   display: flex;
   justify-content: center;
@@ -323,3 +326,258 @@ header .main-menu .item .inner {
   left: -55px;
 }
 
+/* CONTENT-3 */
+.content-3 {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+}
+.content-3 h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #313131;
+}
+.content-3 h3 {
+  font-size: 20px;
+  color: #313131;
+  margin: 20px 0;
+}
+.content-3 .content-3-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content-3 .content-3-img li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 30px 40px 0 0; 
+}
+.content-3 .content-3-img li:nth-child(4),
+.content-3 .content-3-img li:nth-child(8) {
+  margin-right: 0;
+}
+.content-3 .content-3-img li img {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* 문의 Fixed */
+.side-fixed {
+  position: fixed;
+  z-index: 10;
+  right: 25px;
+  bottom: 25px;
+  transition: 1s;
+}
+.side-fixed a {
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  display: block;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
+}
+.side-fixed a img {
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.side-fixed a div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 69px;  
+  transition: 0.4s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.side-fixed a:hover div {
+  position: absolute;
+  width: 130px;
+  height: 90%;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  transform: translateX(-75%);
+  border-radius: 50px;
+  opacity: 1;
+  z-index: -1;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  padding-right: 10px;
+  line-height: 62px;
+}
+/* 문의 클릭시 창 */
+.fixed-form {
+  z-index: 10;
+  width: 437px;
+  height: 100%;
+  position: fixed;
+  right: -437px;
+  opacity: 0;
+  bottom: 0px;
+  background-color: #fff;
+  color: #000;
+  padding: 33px;
+  box-shadow:0px 3px 8px 0px rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  transition: 1s;
+  overflow: auto;
+}
+.fixed-form .close-btn {
+  cursor: pointer;
+}
+.fixed-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+}
+.fixed-form p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 20px;
+}
+.fixed-form p .bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+.fixed-form p .underline {
+  text-decoration: underline;
+}
+.fixed-form .fixed-input {
+  margin: 10px 0;
+}
+.fixed-form .fixed-input-checkbox {
+  width: 14px;
+  height: 14px;
+}
+.fixed-form input {
+  width: 90%;
+  height: 40px;
+  padding: 6px 35px 6px 10px;
+  box-sizing: border-box;
+  background-color: #f3f3f3f3;
+  border: transparent;
+  border-radius: 2px;
+}
+.fixed-form textarea {
+  width: 90%;
+  height: 77px;
+  padding: 6px 35px 6px 10px;
+  box-sizing: border-box;
+  background-color: #f3f3f3f3;
+  border: transparent;
+  border-radius: 2px;
+  resize: none;
+}
+/* fixed js */
+.fixed-active {
+  right: 0;
+  opacity: 1;
+}
+.fixedBtn-active {
+  right: 480px;
+}
+
+/* TOP */
+.top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  margin: auto;
+  display: block;
+  z-index: 11;
+  color: #3a459f;
+  background-color:rgba(5, 8, 190, 0.5);
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 33px;
+  box-shadow:0px 3px 8px 0px rgba(112, 97, 243, 0.7);
+} 
+.top-ro {
+  transform: rotate(135deg);
+  border-left: 1px solid #3a459f;
+  border-bottom: 1px solid #3a459f;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 17px;
+  margin: auto;
+  box-shadow:0px 3px 8px 0px rgba(116, 117, 214, 0.7);
+}
+
+/* FOOTER */
+footer {
+  background-color: #303030;
+}
+footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-bottom: 1px solid #fff;
+}
+footer .footer-flex p {
+  font-size: 14px;
+  color: #dddd;
+  margin: 20px 0;
+}
+footer .footer-flex .btn {
+  border-radius: 3px;
+  background-color: #eee;
+  width: 150px;
+  margin-left: 5px;
+  color: #000;
+  border: 1px solid #fff;
+}
+footer .footer-flex .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+footer .copyright {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright:nth-child(2) {
+  font-size: 12px;
+}
+footer .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+footer .btn span {
+  font-size: 16px;
+}
