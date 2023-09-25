@@ -140,3 +140,16 @@ gsap.to('.floating1', 1.5, {
   yoyo: true,
   ease: Power1.easeInOut 
 });
+
+
+// 반응형 햄버거
+const hamEl = document.querySelector('.nav-ham');
+
+hamEl.addEventListener('click', function () {
+  const activeHamEl = hamEl.classList.contains('ham-active');
+  if (activeHamEl) {
+    hamEl.classList.remove('ham-active');
+  } else {
+    hamEl.classList.add('ham-active');
+  }
+});

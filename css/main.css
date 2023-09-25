@@ -9,7 +9,6 @@ body {
   line-height: 1.4;
   color: #3a459f;
   margin-top: 0;
-  /* overflow-x: hidden; */
 }
 
 a {
@@ -897,4 +896,43 @@ footer .btn {
 }
 footer .btn span {
   font-size: 16px;
+}
+
+
+
+
+/* 반응형 햄버거 */
+.nav-ham {
+  position: fixed;
+  background-color: orange;
+  width: 33px;
+  height: 33px;
+  z-index: 999;
+  top: 30px;
+  right: 66px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.nav-ham span {
+  display: block;
+  z-index: 999;
+  width: 33px;
+  height: 6px;
+  background-color: #000;
+}
+.nav-ham .ham1 {
+
+}
+.nav-ham .ham2 {
+
+}
+.nav-ham .ham3 {
+  
+}
+
+
+/* 반응형 */
+@media (max-width: 600px) {
+  
 }
