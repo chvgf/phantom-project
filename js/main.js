@@ -62,6 +62,14 @@ new Swiper('.content-2-1 .swiper', {
     },
     slidesPerView: 3,
     spaceBetween: 10,
+    breakpoints: { // 반응형
+      640: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
     centeredSlides: true,
     pagination: {
       el: '.content-2-1 .swiper-pagination',
@@ -80,6 +88,14 @@ new Swiper('.content-2-2 .swiper', {
     },
     slidesPerView: 3, 
     spaceBetween: 10, 
+    breakpoints: { //반응형 
+      640: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
     centeredSlides: true, 
     pagination: {
       el: '.content-2-2 .swiper-pagination', 
@@ -153,3 +169,6 @@ hamEl.addEventListener('click', function () {
     hamEl.classList.add('ham-active');
   }
 });
+hamEl.addEventListener('click', function () {
+  
+})
