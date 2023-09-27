@@ -3,7 +3,7 @@ const hEl = document.querySelector('header');
 
 window.addEventListener('scroll', function () {
 
-console.log(window.scrollY);
+// console.log(window.scrollY);
 
 if (window.scrollY > 100) {
     hEl.classList.add('header-bg')
