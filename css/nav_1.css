@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .inner {
@@ -765,7 +766,23 @@ footer .btn span {
   header .main-menu { 
     display: none;
   }
+
+  /* 헴버거 */
   .nav-ham {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  /* 햄버거 */
+  .nav-ham span {
+    background-color: #3a459f;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 햄버거 */
+  .ham-menu li a {
+    width: 350px;
   }
 }

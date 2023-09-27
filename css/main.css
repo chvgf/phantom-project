@@ -687,7 +687,7 @@ color: #555;
 /* 문의 Fixed */
 .side-fixed {
   position: fixed;
-  z-index: 10;
+  z-index: 11;
   right: 25px;
   bottom: 25px;
   transition: 1s;
@@ -744,7 +744,7 @@ color: #555;
 }
 /* 문의 클릭시 창 */
 .fixed-form {
-  z-index: 10;
+  z-index: 11;
   width: 437px;
   height: 100%;
   position: fixed;
@@ -866,7 +866,7 @@ footer .footer-flex p {
   margin: 20px 0;
 }
 footer .footer-flex .btn {
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #eee;
   width: 150px;
   margin-left: 5px;
@@ -908,7 +908,7 @@ footer .btn span {
   position: fixed;
   width: 33px;
   height: 33px;
-  z-index: 999;
+  z-index: 10;
   top: 20px;
   right: 66px;
   display: flex;
@@ -923,7 +923,7 @@ footer .btn span {
 }
 .nav-ham span {
   display: block;
-  z-index: 999;
+  z-index: 10;
   width: 22px;
   height: 5px;
   background-color: #fff;
@@ -947,13 +947,13 @@ footer .btn span {
   right: 0px;
 }
 .ham-active .ham1 {
-  transform: rotate(45deg) translateY(4px) translateX(6px);
+  transform: rotate(45deg) translateY(4px) translateX(7px);
 }
 .ham-active .ham2 {
   transform: rotate(-45deg) translate(-1px);
 }
 .ham-active .ham3 {
-  transform: rotate(45deg) translateY(-4px) translateX(-6px);
+  transform: rotate(45deg) translateY(-4px) translateX(-5px);
 }
 
 /* 반응형 햄버거 클릭시 메뉴 */
@@ -1186,9 +1186,9 @@ footer .btn span {
   .swiper-pagination:nth-child(3) {
     top: 800px
   }
-.nav-ham span {
-  background-color: #000;
-}
+  .nav-ham span {
+    background-color: #3a459f;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1199,9 +1199,9 @@ footer .btn span {
     height: 20px;
   }
   .ham-menu li a {
-    width: 350px;
+    width: 96vw;
   }
-  .nav-ham span {
-    background-color: #000;
-  }
+.fixed-form {
+  width: 96vw;
+}
 }
